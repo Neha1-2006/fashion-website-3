@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleStudio | Fashion Boutique</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; background: #fff7fa; color: #392b32; line-height: 1.6; }
+    header { background: #f7c9d8; padding: 20px 7%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+    .logo { font-size: 27px; font-weight: bold; color: #8e3159; }
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav a { color: #392b32; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #bd4777; }
+    .hero { padding: 75px 7%; text-align: center; background: linear-gradient(135deg, #ffe5ee, #f8b8cf); }
+    .hero h1 { font-size: clamp(35px, 6vw, 58px); margin-bottom: 15px; }
+    .hero p { max-width: 650px; margin: auto; }
+    .btn { display: inline-block; margin-top: 24px; padding: 12px 24px; background: #a93d6b; color: white; text-decoration: none; border-radius: 25px; }
+    section { padding: 55px 7%; }
+    h2 { text-align: center; margin-bottom: 28px; font-size: 30px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px; }
+    .card { background: white; padding: 25px 18px; border-radius: 15px; text-align: center; box-shadow: 0 5px 18px #e8cbd5; }
+    .art { background: #ffe4ed; font-size: 60px; padding: 25px; border-radius: 12px; margin-bottom: 15px; }
+    .card p { margin: 8px 0; }
+    .price { color: #a93d6b; font-weight: bold; }
+    .about { background: #fce3ec; text-align: center; }
+    .about p, .contact p { max-width: 700px; margin: auto; }
+    footer { padding: 25px; text-align: center; background: #392b32; color: white; }
+    @media (max-width: 600px) { header { flex-direction: column; } nav { justify-content: center; gap: 12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">StyleStudio ♡</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#products">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Dress Like Your Dream</h1>
+      <p>Discover beautiful everyday outfits, soft colours, and timeless styles that make every moment special.</p>
+      <a class="btn" href="#products">Explore Collection</a>
+    </section>
+
+    <section id="collections">
+      <h2>Our Collections</h2>
+      <div class="grid">
+        <article class="card"><div class="art">👗</div><h3>Pretty Dresses</h3><p>Effortless looks for every occasion.</p></article>
+        <article class="card"><div class="art">👚</div><h3>Chic Tops</h3><p>Simple pieces with a stylish touch.</p></article>
+        <article class="card"><div class="art">👖</div><h3>Casual Wear</h3><p>Comfortable favourites for every day.</p></article>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2>Featured Favourites</h2>
+      <div class="grid">
+        <article class="card"><div class="art">🌸</div><h3>Rosé Summer Dress</h3><p class="price">₹1,499</p></article>
+        <article class="card"><div class="art">🎀</div><h3>Blush Chic Top</h3><p class="price">₹799</p></article>
+        <article class="card"><div class="art">✨</div><h3>Weekend Co-ord</h3><p class="price">₹1,899</p></article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Our Story</h2>
+      <p>StyleStudio celebrates personal style with versatile, modern fashion. We believe fashion should be fun, comfortable, and uniquely yours.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Let's Connect</h2>
+      <p>Have a question about our collection? Contact our team to learn more about our styles.</p>
+      <a class="btn" href="mailto:hello@example.com">Contact Us</a>
+    </section>
+  </main>
+
+  <footer><p>© 2026 StyleStudio | Your style, your story.</p></footer>
+</body>
+</html>
